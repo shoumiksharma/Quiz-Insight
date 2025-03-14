@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Insight</title>
+    <link rel="stylesheet" href="project.css">
+
+    <link rel="icon" type="image/svg+xml" href="quiz.svg">
+</head>
+<body class="cursor">
+
+    <div class="main">
+        <div class="navbar">
+            <h1>Quiz-Insight</h1>
+        </div>
+        
+        <div class="intro">
+            Welcome to Quiz-Insight ! <br> Challenge your knowledge and see how you stack up against the best. <br> Ready to test your wits ?
+            <button class="cursor btn">
+                <h1>Let's Go</h1>
+            </button>
+        </div>
+    </div>
+
+    <div class="select" style="display: none;" >
+        <form action="">
+            
+            <label for="category">
+                Enter the category :
+            </label>
+            <select name="category" id="category" style="width: 20vw; height: auto; border: none; font-size: 20px; padding: 4px;">
+            </select>
+
+            <label for="difficulty">
+                Select difficulty :
+            </label>
+            <select name="difficulty" id="difficulty" style="width: 20vw; height: auto; border: none; font-size: 20px; padding: 4px;">
+                <option value="null">Any difficulty</option>
+                <option value="easy" selected>Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <label for="q_no">
+                Enter the number of questions :
+            </label>
+            <input type="number" value="1" max="1" min="1" name="q_no" id="q_number" required style="width: 20vw; height: auto; border: none; font-size: 20px; padding: 4px;">
+
+            <button type="submit" class="button">Submit</button>
+
+        </form>
+    </div>
+
+    <div class="question-panel" style="display: none;">
+        <fieldset>
+            <legend></legend>
+            <div class="option-tab"></div>
+            <div class="nxt-btn"></div>
+        </fieldset>
+    </div>
+    
+    <script src="project.js"></script>
+</body>
+</html>
+
+
+<!-- <div>
+<input type="radio" id="vanilla" name="flavor" value="vanilla">
+<label for="vanilla">Vanilla 🍨</label>
+</div>
+<div>
+<input type="radio" id="vanilla" name="flavor" value="vanilla">
+<label for="vanilla">Vanilla 🍨</label>
+</div>
+<div>
+<input type="radio" id="vanilla" name="flavor" value="vanilla">
+<label for="vanilla">Vanilla 🍨</label>
+</div>
+
+<fieldset>
+<legend>Choose a flavor: </legend>
+
+
+
+
+<div>
+<input type="radio" id="strawberry" name="flavor" value="strawberry">
+<label for="strawberry">Strawberry 🍓</label>
+</div>
+</fieldset>
+
+
+
+
+ -->
